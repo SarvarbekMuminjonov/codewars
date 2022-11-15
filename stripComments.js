@@ -2,7 +2,7 @@ function solution(input, markers) {
   let str = input.split(" ")
   console.log(str)
   str.map((item) => {
-    if (markers[]) {
+    if (markers[item]) {
       if (str[str.indexOf(item)].length > 1) str[str.indexOf(item)] = undefined
       else {
         str[str.indexOf(item) + 1] = undefined
