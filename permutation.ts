@@ -4,8 +4,8 @@ function permute(nums: number[]): number[][] {
         return [nums]
     }
 
-    const combinations = new Array(nums.length).fill(0);
-    const final =new Array(fibonacci(nums.length)).fill(0);
+    const combinations = [];
+    const final = [];
     let clone = [...nums]
 
     for (let i = 0; i < nums.length; i++) {
@@ -20,7 +20,7 @@ function permute(nums: number[]): number[][] {
             final.push([combinations[i][0], ...result[j]])
         }
     }
-
+    
     return final
 }
 
