@@ -1,6 +1,6 @@
 function solution(input, markers) {
   let str = input.split(" ")
-  console.log(str)
+  
   str.map((item) => {
     if (markers[item]) {
       if (str[str.indexOf(item)].length > 1) str[str.indexOf(item)] = undefined
@@ -12,6 +12,7 @@ function solution(input, markers) {
   })
   return str
 }
+
 // function solution(input, markers) {
 //   let str = ""
 //   return str.match(/(?<=\#)(.*?)(?=[^\t]*)/gim)
